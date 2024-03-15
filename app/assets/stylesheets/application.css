@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+ li {
+  list-style-type: none;
+ }
+
+ a:link {
+  text-decoration: none;
+ }
+
+ .equal-height {
+  display: flex;
+  flex-direction: column;
+}
+
+.equal-height .box {
+  flex-grow: 1;
+}
