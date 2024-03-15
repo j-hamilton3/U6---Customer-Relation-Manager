@@ -1,0 +1,13 @@
+<% @customers.each do |customer| %>
+  <div>
+    <ul>
+      <li>Name: <%= customer.full_name %></li>
+      <li>Email: <%= customer.email.presence || "NONE" %></li>
+      <li>Phone: <%= customer.phone_number %></li>
+      <li>Notes: <%= customer.notes.presence || "NONE" %></li>
+      <li><%= image_tag(customer.image, size: "100")%> </li>
+    </ul>
+  </div>
+  <br>
+  <br>
+<% end %>
